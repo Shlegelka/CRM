@@ -36,7 +36,8 @@ public class App
         driver.get("https://crm.geekbrains.space/user/login");
 
 
-        WebElement webElement = driver.findElement(By.name("q"));
+        driver.findElement(By.name("email"));
+        WebElement webElement = null;
         webElement.click();
         webElement.sendKeys("user");
 
